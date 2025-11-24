@@ -4,3 +4,4 @@ numpy
 matplotlib
 ephem
 pyswisseph
+geopy
