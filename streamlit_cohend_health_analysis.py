@@ -15,7 +15,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
+st.markdown("<h1 style='color: #2c3e50; text-align: center;'>🪐 KP Personal Health Analysis - Sarvashtagavarga</h1>", unsafe_allow_html=True)
 def create_kp_calculator(birth_datetime, birth_lat, birth_lon):
     """Create a KP calculator with real planetary transit logic"""
     
@@ -431,6 +431,6 @@ def main():
             file_name=f"sav_group_analysis_{start_date}_{end_date}.csv",
             mime="text/csv"
         )
-
+st.info("Thanks for using the app,deveploped by subramanian ramajayam")
 if __name__ == "__main__":
     main()
