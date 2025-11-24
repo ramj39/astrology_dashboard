@@ -5,14 +5,7 @@ import datetime
 
 # 🎨 Styling
 st.set_page_config(page_title="Planet Ephemeris Viewer", layout="centered")
-st.markdown("""
-    <style>
-        body { background-color: #f0f8ff; color: #003366; }
-        .stApp { background-color: #f0f8ff; }
-        h1, h2, h3 { color: #003366; }
-    </style>
-""", unsafe_allow_html=True)
-
+st.markdown("developed by subramanian ramajayam")
 # 🪐 Planet options
 planet_names = {
     "Sun":ephem.Sun,
