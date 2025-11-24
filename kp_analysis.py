@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
+st.markdown("<h1 style='color: #2c3e50; text-align: center;font-weight:bold;'>🪐 KP Personal Health Analysis - Sarvashtagavarga</h1>", unsafe_allow_html=True)
 st.markdown(
     """
     <style>
@@ -559,6 +560,6 @@ def run_event_prediction(start_date, end_date, get_daily_prediction, birth_data)
         file_name=f"kp_event_predictions_{start_date}_{end_date}.csv",
         mime="text/csv"
     )
-
+st.markdown("Thanks for using the app developed by subramanian ramajayam")
 if __name__ == "__main__":
     main()
