@@ -27,7 +27,7 @@ planet_names = {
 }
 
 st.title("📆 Planet Ephemeris Viewer")
-st.markdown("thanks for using the app developed by subramanian ramajayam")
+#st.markdown("thanks for using the app developed by subramanian ramajayam")
 # 🌍 Select planet
 selected_planet = st.selectbox("Choose a planet", list(planet_names.keys()))
 
@@ -73,7 +73,8 @@ else:
     df = pd.DataFrame(data)
     st.subheader(f"{selected_planet} Ephemeris from {start_date} to {end_date}")
     st.dataframe(df)
+st.markdown("Crafted with resonance by SubramanianRamajayam. Powered by the stars. Guided by data. 📿")
 
     # 📤 Optional CSV export
     st.download_button("Download CSV", df.to_csv(index=False), file_name=f"{selected_planet}_ephemeris.csv")
-st.markdown("Crafted with resonance by SubramanianRamajayam. Powered by the stars. Guided by data. 📿")
+#st.markdown("Crafted with resonance by SubramanianRamajayam. Powered by the stars. Guided by data. 📿")
