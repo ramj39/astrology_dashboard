@@ -431,6 +431,6 @@ def main():
             file_name=f"sav_group_analysis_{start_date}_{end_date}.csv",
             mime="text/csv"
         )
-st.info("Thanks for using the app,deveploped by subramanian ramajayam")
+st.markdown("Thanks for using the app deveploped by subramanian ramajayam")
 if __name__ == "__main__":
     main()
