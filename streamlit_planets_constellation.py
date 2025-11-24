@@ -76,4 +76,4 @@ else:
 
     # 📤 Optional CSV export
     st.download_button("Download CSV", df.to_csv(index=False), file_name=f"{selected_planet}_ephemeris.csv")
-    st.markdown("Crafted with resonance by SubramanianRamajayam. Powered by the stars. Guided by data. 📿🖤")
+st.markdown("Crafted with resonance by SubramanianRamajayam. Powered by the stars. Guided by data. 📿🖤")
