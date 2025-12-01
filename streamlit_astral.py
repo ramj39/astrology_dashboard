@@ -74,6 +74,7 @@ try:
 
 except Exception as e:
     st.error(f"Error: {e}")
-#st.markdown("[link to kp analysis](https://astrologydashboard-rwhggza2mprd6sguf
+st.markdown("[link to kp analysis](https://astrologydashboard-rwhggza2rnprd6sgufnf9e.streamlit.app/)")
 st.text("thanks for using this app ,developed by S.Ramajayam")
+
 
