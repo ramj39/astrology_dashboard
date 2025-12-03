@@ -432,8 +432,10 @@ def main():
             mime="text/csv"
         )
 st.markdown("[link to kp analysis](https://astrologydashboard-rwhggza2rnprd6sgufnf9e.streamlit.app/)")
+st.markdown("[kp prasna app](https://astrologydashboard-ggvofaujnm4.streamlit.app/)")
 st.markdown("Thanks for using the app deveploped by subramanian ramajayam")
 st.snow()
 if __name__ == "__main__":
     main()
+
 
