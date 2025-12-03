@@ -561,5 +561,7 @@ def run_event_prediction(start_date, end_date, get_daily_prediction, birth_data)
         mime="text/csv"
     )
 st.markdown("Thanks for using the app developed by subramanian ramajayam")
+st.balloons()
 if __name__ == "__main__":
     main()
+
