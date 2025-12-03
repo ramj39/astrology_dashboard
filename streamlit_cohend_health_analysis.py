@@ -431,6 +431,9 @@ def main():
             file_name=f"sav_group_analysis_{start_date}_{end_date}.csv",
             mime="text/csv"
         )
+st.markdown("[link to kp analysis](https://astrologydashboard-rwhggza2rnprd6sgufnf9e.streamlit.app/)")
 st.markdown("Thanks for using the app deveploped by subramanian ramajayam")
+st.snow()
 if __name__ == "__main__":
     main()
+
