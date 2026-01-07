@@ -6,6 +6,11 @@ from datetime import datetime, timedelta
 st.markdown("<h1 style='color: #2c3e50; text-align: center;font-weight:bold;'>🪐 KP Personal Health Analysis - Sarvashtagavarga</h1>", unsafe_allow_html=True)
 st.markdown(
     """
+        ⚠️ **Disclaimer**  
+Disclaimer: This application is for educational and analytical purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of qualified health providers with any questions about medical conditions.
+
+st.markdown(
+    """
     <style>
     body, .stApp {
         background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%,#fad0c4 100%);
@@ -564,4 +569,5 @@ st.markdown("Thanks for using the app developed by subramanian ramajayam")
 st.balloons()
 if __name__ == "__main__":
     main()
+
 
