@@ -7,26 +7,24 @@ st.markdown("<h1 style='color: #2c3e50; text-align: center;font-weight:bold;'>�
 # Disclaimer text
 st.markdown(
     """
-    ⚠️ **Disclaimer**  
-    This application is for educational and analytical purposes only.  
-    It should not be used as a substitute for professional medical advice, diagnosis, or treatment.  
-    Always seek the advice of qualified health providers with any questions about medical conditions.
-    """
-)
-
-# CSS styling
-st.markdown(
-    """
     <style>
-    body, .stApp {
-        background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-        min-height: 100vh;
-        background-attachment: fixed;
+    .disclaimer {
+        background-color: #FFFF99; /* canary yellow */
+        color: #000000;            /* black text */
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: bold;
     }
     </style>
+    <div class="disclaimer">
+        ⚠️ Disclaimer: This application is for educational and analytical purposes only.  
+        It should not be used as a substitute for professional medical advice, diagnosis, or treatment.  
+        Always seek the advice of qualified health providers with any questions about medical conditions.
+    </div>
     """,
     unsafe_allow_html=True
 )
+
 
 
 def create_kp_calculator(birth_datetime, birth_lat, birth_lon):
@@ -576,6 +574,7 @@ st.markdown("Thanks for using the app developed by subramanian ramajayam")
 st.balloons()
 if __name__ == "__main__":
     main()
+
 
 
 
