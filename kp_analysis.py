@@ -235,9 +235,9 @@ def main():
     
     col1, col2 = st.sidebar.columns(2)
     with col1:
-        birth_lat = st.number_input("Birth Latitude", value=28.6139, format="%.6f", key="birth_lat")
+        birth_lat = st.number_input("Birth Latitude", value=10.3833, format="%.6f", key="birth_lat")
     with col2:
-        birth_lon = st.number_input("Birth Longitude", value=77.2090, format="%.6f", key="birth_lon")
+        birth_lon = st.number_input("Birth Longitude", value=78.8001, format="%.6f", key="birth_lon")
     
     birth_place = st.sidebar.text_input("Birth Place", "New Delhi", key="birth_place")
     
@@ -574,6 +574,7 @@ st.markdown("Thanks for using the app developed by subramanian ramajayam")
 st.balloons()
 if __name__ == "__main__":
     main()
+
 
 
 
