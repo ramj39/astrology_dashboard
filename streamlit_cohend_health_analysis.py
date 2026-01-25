@@ -3,15 +3,23 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
+# Disclaimer text
 st.markdown(
     """
     <style>
-    body, .stApp {
-        background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%,#fad0c4 100%);
-        min-height: 100vh;
-        background-attachment: fixed;
+    .disclaimer {
+        background-color: #FFFF99; /* canary yellow */
+        color: #000000;            /* black text */
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: bold;
     }
     </style>
+    <div class="disclaimer">
+        ⚠️ Disclaimer: This application is for educational and analytical purposes only.  
+        It should not be used as a substitute for professional medical advice, diagnosis, or treatment.  
+        Always seek the advice of qualified health providers with any questions about medical conditions.
+    </div>
     """,
     unsafe_allow_html=True
 )
@@ -437,5 +445,6 @@ st.markdown("Thanks for using the app deveploped by subramanian ramajayam")
 st.snow()
 if __name__ == "__main__":
     main()
+
 
 
