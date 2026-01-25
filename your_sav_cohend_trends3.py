@@ -7,17 +7,27 @@ import matplotlib.pyplot as plt
 from geopy.geocoders import Nominatim
 
 # --- UI Styling ---
-st.markdown("""
-<style>
-body, .stApp {
-    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%,#fad0c4 100%);
-    min-height: 100vh;
-    background-attachment: fixed;
-}
-</style>
-""", unsafe_allow_html=True)
+# Disclaimer text
+st.markdown(
+    """
+    <style>
+    .disclaimer {
+        background-color: #FFFF99; /* canary yellow */
+        color: #000000;            /* black text */
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    </style>
+    <div class="disclaimer">
+        ⚠️ Disclaimer: This application is for educational and analytical purposes only.  
+        It should not be used as a substitute for professional medical advice, diagnosis, or treatment.  
+        Always seek the advice of qualified health providers with any questions about medical conditions.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-# --- Setup ---
 swe.set_ephe_path(".")
 geolocator = Nominatim(user_agent="sav_app")
 
@@ -180,3 +190,4 @@ if run:
     st.subheader("📄 Downloadable Effect Size Table")
     #st.dataframe(effect_df, use_container_width)
     st.dataframe(effect_df, use_container_width=True)
+
