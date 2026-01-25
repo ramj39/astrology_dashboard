@@ -4,7 +4,26 @@ import numpy as np
 from io import BytesIO
 import altair as alt
 from datetime import datetime
-
+# Disclaimer text
+st.markdown(
+    """
+    <style>
+    .disclaimer {
+        background-color: #FFFF99; /* canary yellow */
+        color: #000000;            /* black text */
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    </style>
+    <div class="disclaimer">
+        ⚠️ Disclaimer: This application is for educational and analytical purposes only.  
+        It should not be used as a substitute for professional medical advice, diagnosis, or treatment.  
+        Always seek the advice of qualified health providers with any questions about medical conditions.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 # -------------------------
 # Config and helpers
 # -------------------------
@@ -317,3 +336,4 @@ with st.expander("Notes on ascendant calculation"):
     st.write("Astronomical ascendant can be computed precisely with ephemeris libraries. This app provides a KP-horary fallback and manual override for reproducible workflows without heavy dependencies.")
 st.write("developed by Subramanian Ramajayam")
 st. balloons()
+
