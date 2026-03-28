@@ -239,7 +239,7 @@ def main():
     with col2:
         birth_lon = st.number_input("Birth Longitude", value=78.8001, format="%.6f", key="birth_lon")
     
-    birth_place = st.sidebar.text_input("Birth Place", "New Delhi", key="birth_place")
+    birth_place = st.sidebar.text_input("Birth Place", "Pudukkottai", key="birth_place")
     
     # Analysis mode selection
     st.sidebar.header("Analysis Mode")
